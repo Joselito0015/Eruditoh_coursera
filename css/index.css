@@ -31,9 +31,15 @@ body{
 }
 
 .card .btn{
+    transition: 0.5s;
     width: 100%;
     background-color:rgb(8, 1, 70);
     border-color: blueviolet;
+}
+
+.card .btn:hover{
+    transition: 0.5s;
+    background-color:blueviolet;
 }
 
 .card{
