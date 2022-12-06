@@ -11,10 +11,19 @@ body{
 }
 
 .card{
+    transition: 0.5s;
     margin: 20px auto;
     color:white;
     background-color: rgb(2, 0, 46);
 }
+.card:hover{
+    margin: 20px auto;
+    color:white;
+    background-color: rgb(4, 0, 80);
+    transition: 0.5s;
+}
+
+
 
 
 .card img{
