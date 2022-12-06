@@ -4,7 +4,7 @@
   "description": "Primera version de nuestro proyecto startup",
   "main": "index.html",
   "scripts": {
-    "dev":"lite-server",
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Joselito0015/Eruditoh_coursera#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "lite-server": "^2.6.1"
   }
 }
+

@@ -1,0 +1,53 @@
+body{
+    background-color: rgb(2, 0, 48);
+}
+
+.jumbotron{
+    color: white ;
+}
+
+.container,.container-fluid{
+    background-color:rgb(27, 17, 63);
+}
+
+.card{
+    margin: 20px auto;
+    color:white;
+    background-color: rgb(2, 0, 46);
+}
+
+
+.card img{
+    border-radius: 5px;;
+}
+
+.card .btn{
+    width: 100%;
+    background-color:rgb(8, 1, 70);
+    border-color: blueviolet;
+}
+
+.card{
+    height: 90% !important;
+}
+
+header {
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+footer{
+    color: white;
+    margin-top: 20px;;
+    padding: 30px;
+}   
+
+ul{
+    list-style-type: none;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
