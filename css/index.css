@@ -6,9 +6,6 @@ body{
     color: white ;
 }
 
-.container,.container-fluid{
-    background-color:rgb(27, 17, 63);
-}
 
 .card{
     transition: 0.5s;
@@ -48,13 +45,16 @@ body{
 
 header {
     padding: 30px;
+    margin-top: 100px;
     margin-bottom: 20px;
+    background-color:rgb(27, 17, 63);
 }
 
 footer{
     color: white;
     margin-top: 20px;;
     padding: 30px;
+    background-color:rgb(27, 17, 63);
 }   
 
 ul{
@@ -68,6 +68,25 @@ a{
 }
 
 
-.card p {
-    margin: 0px;
+
+/* Nav  bar*/
+
+/* .navbar {
+    background-color: rgb(27, 17, 63) !important;
+} */
+
+body { 
+    height:auto;
+  }
+
+
+
+/* Forms */
+
+.contact-form{
+height: 450px;
+}
+
+.form-check{
+    color:white
 }
