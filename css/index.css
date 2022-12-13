@@ -90,3 +90,16 @@ height: 450px;
 .form-check{
     color:white
 }
+
+.mision{
+    color: white;
+}
+
+.mision p {
+    text-justify: inter-word;
+}
+
+#about_image{
+    margin: auto auto;
+
+}
