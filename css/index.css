@@ -113,3 +113,34 @@ height: 450px;
     width: 100%;
     display: none ;
 }
+
+#v-pills-tabContent{
+    color:white;
+}
+
+#pills-container{
+    padding-top: 50px;
+}
+
+
+#p-contratar{
+    /* margin: auto 40%; */
+}
+
+
+.custom-tooltip {
+    --bs-tooltip-bg: white;
+    --bs-tooltip-color: rgb(0, 0, 0);
+  }
+
+
+.mensaje-btn{
+    margin: auto 40%;
+}
+
+#carouselExampleInterval{
+}
+
+.carousel-item img{
+    height: 300px;
+}
