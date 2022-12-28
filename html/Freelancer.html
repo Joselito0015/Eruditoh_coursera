@@ -104,7 +104,7 @@
 
         <div class="container-sm align-items-center mt-3 row">
           <div class="d-flex  justify-content-center" ">
-            <button type="button" class="btn btn-lg btn-primary col-sm-3 " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@ANGELICA0017">Solicitar disponibilidad</button>
+            <button id="btnDisp" type="button" class="btn btn-lg btn-primary col-sm-3 " data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@ANGELICA0017">Solicitar disponibilidad</button>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
               <div class="modal-dialog">
@@ -247,8 +247,31 @@
 
   </body>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script src="../JS/modal.js" ></script>
+
+  <script>
+    $(function() {
+    $('#exampleModal').on('show.bs.modal', function(e){
+        console.log('El modal se está abriendo')
+        $('#btnDisp').prop('disabled', true);
+        $('#btnDisp').addClass('btn-secondary');
+    })
+    $('#exampleModal').on('shown.bs.modal', function(e){
+        console.log('El modal se abrió')
+    })
+    $('#exampleModal').on('hide.bs.modal', function(e){
+        console.log('El modal se está ocultando')
+        $('#btnDisp').prop('disabled', false);
+        $('#btnDisp').removeClass('btn-secondary');
+    })
+    $('#exampleModal').on('hidden.bs.modal', function(e){
+        console.log('El modal se ocultó')
+    })
+});
+  </script>
 
   <script>
     // ---> tooltips
@@ -272,11 +295,7 @@
       modalTitle.textContent = `Solicitar disponibilidad  a ${recipient}`
       modalBodyInput.value = recipient})
       
-      $(function () {
-        $('.carousel').carousel({
-          interval:2000
-        })
-      });
+
 
   </script>
 </html>

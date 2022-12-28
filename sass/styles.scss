@@ -1,0 +1,20 @@
+$amarillo:yellow;
+$Rojo:red;
+$Verde:green;
+
+$Azul:rgb(46, 46, 239);
+
+
+@mixin Main_Titles ($m_top,$m_bottom,$p_bottom,$p_top,$color_text){
+ color:$color_text;
+ padding-top: $p_top;
+ padding-bottom: $p_bottom;
+ margin-top:$m_top;
+ margin-bottom:$m_bottom;
+}
+
+.h1{
+    @include Main_Titles(20px,20px,10px,20px, $amarillo)
+}
+
+
